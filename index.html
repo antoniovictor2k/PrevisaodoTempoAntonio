@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="CSS/estilo.css">
+    <title>Tempo New</title>
+</head>
+<body onload="getTempo()">
+    
+<div class="divContainerPaginaPrincipal">
+
+
+<div class="divPesquisarCidade"> 
+<input type="search" name="pesquisar" id="pesquisarCidade" placeholder="Nome da Cidade">
+<label for="pesquisarCidade">
+    <img src="IMG/Icones/lupa2.png" alt="" class="imgPesquisarCidade" onclick="getTempo()" >
+</label>
+
+</div><!-- divpesquisarCidade -->
+
+
+<div class="divdata"> <span id="data">00 mês 2022</span></div>
+<div class="divCidade"><span id="cidade">Cidade</span></div>
+<div class="divEllipse">
+    <div class="divImgNuvem">
+  
+    </div>
+    <div class="divTemperatura">
+        <span id="temperatura">0ºC</span>
+    </div>
+    <div class="divEllipse1"></div>
+</div> <!-- fim divEllipse1 -->
+
+
+<div class="divContainerInfo">
+    
+    <div class="divCategoriaLinha1">
+    <div class="categoria1">Situação atual:</div>
+    <span id="categoria1">Chuva</span>
+</div>
+<div class="divCategoriaLinha2">
+        <div class="categoria2">Volume de chuva:</div>
+        <span id="categoria2">00 mm</span>
+    </div>
+    <div class="divCategoriaLinha3">
+    <div class="categoria3">Umidade:</div>
+    <span id="categoria3">00%</span>
+</div>
+<div class="divCategoriaLinha4">
+        <div class="categoria4">Atualmente:</div>
+    <span id="categoria4">dia</span>
+    </div>
+    
+</div>    <!-- fim divContainerInfo -->
+
+
+<div class="divRectangle">
+    <div class="divRectangle1">
+
+        <div class="rectangleTexto">Os próximos dias</div>
+        <div class="rectanglecontainer">
+            
+        </div><!-- fim rectanglecontainer -->
+    </div> <!-- fim divRectangle1 -->
+</div>
+
+
+
+
+
+
+</div> <!-- divContainerPaginaPrincipal -->
+
+<footer class="desenvolvedor">Grupo:&nbsp;<a href="fgd">Antonio&Emilly</a> </footer>
+<script src="JS/script.js"></script>
+</body>
+</html>
