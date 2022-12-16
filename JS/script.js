@@ -39,25 +39,43 @@ divImagemLog.innerHTML = `<img src="IMG/Icones/${json.results.condition_slug}.pn
     let htmlDias = '';
 
 
-    for(let i=0; i< json.results.forecast.length; i++){
-        json.results.forecast[i]
-    }
+    // for(let i=0; i< json.results.forecast.length; i++){
+    //     json.results.forecast[i]
+    // }
 
+    // json.results.forecast.forEach(e => { //arrow function
+    //     let divDia = `
+    //         <div class="divday0">
+    //         <span id="dia1">${e.weekday} ${e.date}</span>
+    //         <div class="rectangle20">
+    //             <div class="dayImg1">
+    //                 <img id="dayImg1" src="IMG/Icones/${e.condition}.png" alt="gg">
+    //             </div>
+    //             <span id="dayGrau1">Max: ${e.max}ºC</span>
+    //         </div>
+    //         </div>`;
+        
+    //     htmlDias += divDia;
+    // });
 
-    json.results.forecast.forEach(e => { //arrow function
+    for (let i = 1; i < json.results.forecast.length; i++) {
+        console.log(json.results.forecast[i]);
+
         let divDia = `
             <div class="divday0">
-            <span id="dia1">${e.weekday} ${e.date}</span>
+            <span id="dia1">${json.results.forecast[i].weekday} ${json.results.forecast[i].date}</span>
             <div class="rectangle20">
                 <div class="dayImg1">
-                    <img id="dayImg1" src="IMG/Icones/${e.condition}.png" alt="gg">
+                    <img id="dayImg1" src="IMG/Icones/${json.results.forecast[i].condition}.png" alt="gg">
                 </div>
-                <span id="dayGrau1">Max: ${e.max}ºC</span>
+                <span id="dayGrau1">Max: ${json.results.forecast[i].max}ºC</span>
             </div>
             </div>`;
         
         htmlDias += divDia;
-    });
+
+
+    }
 
     divContainerDias.innerHTML = htmlDias;
 
