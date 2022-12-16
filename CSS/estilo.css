@@ -47,9 +47,23 @@ body{
     outline-style: none;
     color: #ffffff;
     font-weight: 500;
-    font-size: 150%;
+    font-size: 1em;
+  
+    transition-property: font-size;
+    transition-duration: 2s;
+    transition-delay: 0.5s;
+    
+    
+    
 
     cursor: text;
+}
+#pesquisarCidade:focus{
+    transition-property: border;
+
+
+    border-bottom: solid 1px #ffffff;
+
 }
 
 
