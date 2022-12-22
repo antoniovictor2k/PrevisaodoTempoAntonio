@@ -9,7 +9,7 @@ async function getTempo(){
     
     
     
-    const uri = ("https://api.hgbrasil.com/weather?format=json-cors&key=c29bcc80&city_name="+localizarCidades+"");
+    const uri = ("https://api.hgbrasil.com/weather?format=json-cors&key=3a69decb&city_name="+localizarCidades+"");
     const encodedURI = encodeURI(uri);
     const resposta = await fetch (encodedURI);
     const json = await resposta.json();
